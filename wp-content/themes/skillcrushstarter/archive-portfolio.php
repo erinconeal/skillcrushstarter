@@ -17,22 +17,24 @@ get_header(); ?>
 		<div class="main-content" role="main">
       <?php query_posts('posts_per_page=10&post_type=portfolio&orderby=date&order=ASC'); ?>
 			<?php while ( have_posts() ) : the_post();
-      $services = get_field('services');
+			$technologies = get_field('technologies');
+			$date = get_field('date');
+      $explanation = get_field('explanation');
       $image_1 = get_field("image_1");
       $size = "medium";
       ?>
 
-      <article class="case-study">
-        <aside class="case-study-sidebar">
-          <p class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-          <p class="lighter gray"><?php echo $services; ?></p>
+      <article class="portfolio-archive-container">
+        <aside class="portfolio-archive-sidebar">
+          <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<p class="bold"><?php echo $date; ?></p>
+					<p class="lighter gray">Technologies: <?php echo $technologies; ?></p>
+          <p class="lighter"><?php echo $explanation; ?></p>
 
-          <?php the_excerpt(); ?>
-
-          <h6 class="bold green-text"><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></h6>
+          <h6 class="bold"><a class="blue-text" href="<?php the_permalink(); ?>">View Project &rsaquo;</a></h6>
         </aside>
 
-        <div class="case-study-images">
+        <div class="portfolio-archive-images">
           <a href="<?php the_permalink(); ?>">
           <?php if($image_1) {
             echo wp_get_attachment_image( $image_1, $size );
