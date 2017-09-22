@@ -23,7 +23,6 @@ get_header(); ?>
       <br>
     Feel free to take a look at my <a class="blue-text" href="<?php echo home_url(); ?>/blog">blog</a> or some of my featured <a class="blue-text" href="<?php echo home_url(); ?>/portfolio">work.</a></p>
   </div>
-
 </div>
 
 

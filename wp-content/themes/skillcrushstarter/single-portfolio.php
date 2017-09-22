@@ -58,6 +58,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<div class="back-to-work">
-		<a href="<?php echo home_url(); ?>/case-studies"><p><span class="green-text">&#x2190;</span> Back to Work</p></a>
+		<a href="<?php echo home_url(); ?>/portfolio"><p><span class="green-text">&#x2190;</span> Back to Work</p></a>
 	</div>
 <?php get_footer(); ?>
