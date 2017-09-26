@@ -886,12 +886,16 @@ body {
 	text-transform: uppercase;
 }
 
+.back-to-work {
+	border-top: 1px solid #C3C3C3;
+	margin-top: 1em;
+}
+
 @media (max-width: 768px) {
 	.portfolio-archive-container {
 		-webkit-flex-direction: column;
     flex-direction: column;
 		padding-bottom: 1em;
-		border-bottom: 1px solid #C3C3C3;
 	}
 }
 
@@ -900,3 +904,53 @@ body {
 a.blue-text {
 	color: #4571B4;
 }
+
+/* Footer */
+
+.site-footer .site-info {
+	display: flex;
+	border-top: 1px solid #C3C3C3;
+	padding-top: .5em;
+}
+
+.site-footer .site-info .site-description {
+	flex: 1;
+}
+
+.site-footer .site-info .social-btns {
+	margin-bottom: 1.875em;
+	flex: 1;
+}
+.site-footer .site-info .social-btns a {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: .5em;
+	float: right;
+}
+.site-footer .site-info .soc-icon.tw {
+	background: url(img/twitter-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.site-footer .site-info .soc-icon.fb {
+	background: url(img/facebook-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.site-footer .site-info .soc-icon.ln {
+	background: url(img/linkedin-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.site-footer .site-info .soc-icon.db {
+	background: url(img/dribbble-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.site-footer .site-info .soc-icon.gh {
+	background: url(img/github-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.site-footer .site-info .soc-icon.in {
+	background: url(img/instagram-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+
+/* End Footer */

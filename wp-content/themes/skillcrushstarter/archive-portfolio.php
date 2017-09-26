@@ -48,4 +48,8 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
+	<div class="content">
+		<a href="<?php echo site_url('/contact/'); ?>" class="btn" id="nf-field-4">Contact Me</a>
+	</div>
+
 <?php get_footer(); ?>

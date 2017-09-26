@@ -25,5 +25,3 @@ get_header(); ?>
 	</div>
 	<!-- Photo by Luca Zanon on Unsplash -->
 </section>
-
-<?php get_footer(); ?>

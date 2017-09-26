@@ -51,13 +51,16 @@ get_header(); ?>
               echo wp_get_attachment_image( $image_6, $size );
             } ?>
           </div>
-
         </article>
 			<?php endwhile; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
+	<div class="content">
+		<a href="<?php echo site_url('/contact/'); ?>" class="btn" id="nf-field-4">Contact Me</a>
+	</div>
+
 	<div class="back-to-work">
-		<a href="<?php echo home_url(); ?>/portfolio"><p><span class="green-text">&#x2190;</span> Back to Work</p></a>
+		<a href="<?php echo home_url(); ?>/portfolio"><p><span class="blue-text">&#x2190;</span> Back to Work</p></a>
 	</div>
 <?php get_footer(); ?>
