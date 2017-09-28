@@ -871,11 +871,12 @@ body {
 }
 
 .portfolio-archive-sidebar p.gray {
-	color: #C3C3C3;
+	color: gray;
 }
 
 .portfolio-archive-images {
 	flex: 2;
+	border: 1px solid #C3C3C3;
 }
 
 .portfolio-archive-sidebar .bold {

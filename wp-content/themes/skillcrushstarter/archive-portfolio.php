@@ -28,7 +28,7 @@ get_header(); ?>
         <aside class="portfolio-archive-sidebar">
           <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<p class="bold"><?php echo $date; ?></p>
-					<p class="lighter gray">Technologies: <?php echo $technologies; ?></p>
+					<p class="gray">Technologies: <?php echo $technologies; ?></p>
           <p class="lighter"><?php echo $explanation; ?></p>
 
           <h6 class="bold"><a class="blue-text" href="<?php the_permalink(); ?>">View Project &rsaquo;</a></h6>
